@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: demo
-          image: chanmi910/demo:f7787047eb3d2e1785e9051b5f8248e3e150b39c
+          image: chanmi910/tp-spring-petclinic:2723c36ec5d05c5a21de87535288fee26174bef3
           ports:
             - containerPort: 8080
