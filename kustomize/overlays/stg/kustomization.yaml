@@ -1,13 +1,10 @@
 bases:
 - ../../base
-
 patchesStrategicMerge:
   - deployment-patch.yaml
-  - ingress-patch.yaml
-
-namespace: dev
-namePrefix: dev-
+namespace: stg
+namePrefix: stg-
 #nameSuffix: "-001"
 commonLabels:
   spring-boot: "true"
-  environment: "dev"
+  environment: "stg"
