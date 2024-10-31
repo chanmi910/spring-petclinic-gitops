@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-petclinic
+  namespcae: default
+  labels:
+    app: spring-petclinic
+spec: 
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring-petclinic
+  template:
+    metadata:
+      labels:
+        app: spring-petclinic
+    spec:
+      containers:
+        - name: spring-petclinic
+          image: chanmi910/tp-spring-petclinic:2723c36ec5d05c5a21de87535288fee26174bef3
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-petclinic
+  namespcae: dev
+  labels:
+    app: spring-petclinic
+spec: 
+  replicas: 1
