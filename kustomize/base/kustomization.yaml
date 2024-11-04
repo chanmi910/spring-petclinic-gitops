@@ -2,3 +2,15 @@ resources:
 - deployment.yaml
 - service.yaml
 - ingress.yaml
+
+configMapGenerator:
+- name: configmap-1
+  files:
+    - application.properties
+- name: configmap-2
+  envs:
+    - configmap-2.env
+- name: configmap-3
+  literals:
+    - name="configmap-3"
+    - description="literal key-value pair"
